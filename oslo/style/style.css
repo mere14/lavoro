@@ -1,0 +1,629 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #C5DA99 url(../images/img01.jpg) repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #787878;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: 'Abel', sans-serif;
+	color: #3DA29B;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #5E5E5E;
+}
+
+a:hover {
+}
+
+#wrapper {
+	padding-top: 50px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+/* Header */
+
+#header {
+	width: 900px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0px 50px;
+	margin-bottom:30px;
+	background: url(../images/img02.jpg) repeat;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+
+#logo h1 {
+	line-height: 100px;
+	letter-spacing: -2px;
+	/*text-transform: lowercase;*/
+	font-size: 3.8em;
+}
+
+#logo h1 a {
+	color: #defeca;
+	
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+	width: 550px;
+	height: 90px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu ul {
+	float: right;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	line-height: 100px;
+	margin-right: 1px;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+	text-transform: uppercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	color: #defeca;
+        font-weight: bold;
+}
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+/* Page */
+
+#page {
+	width: 1000px;
+	margin: 0px auto;
+	 
+	background: #FFFFFF;
+}
+
+/* Content */
+
+#content {
+	
+	
+	padding: 20px 50px;
+}
+
+#content p {
+	text-align: justify;
+        
+        
+}
+
+
+/* Footer */
+
+#footer {
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+	margin-top:30px;
+	font-family: 'Abel', sans-serif;
+	background: url(../images/img02.jpg) repeat;
+}
+
+#footer p {
+	margin: 0px;
+	padding-top: 30px;
+	padding-left:50px;
+	letter-spacing: 1px;
+	line-height: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	
+	text-align:center;
+	color: #000000;
+}
+
+#footer a {
+	color: #ffffff;
+}
+	
+
+/*Form pagina Verifica Disponibilità del campo*/
+
+form#verifica{
+    margin: 0;  
+    }
+    
+.label_data {
+    float: left;
+    width: 120px;
+    font: 14px/22px Arial,sans-serif;
+    margin-right: 10px;
+    
+    text-align: right;
+    font-weight: bold;
+    color: #475078;
+    height:25px;
+}
+.label_ora {
+    float: left;
+    width: 120px;
+    font: 14px/22px Arial,sans-serif;
+    margin-right: 10px;
+    
+    text-align: right;
+    font-weight: bold;
+    color: #475078;
+    height:25px;
+}
+
+
+
+
+div.input-verifica{
+    display: block;
+    float: left;   
+    margin-bottom: 3px
+        
+}
+div.input-verifica_ora{
+    
+    float: left;
+    margin-bottom: 3px
+}
+
+/*bottone form verifica prenotazione*/
+.go{
+    float: left;
+    width: 80px;
+    text-align:center;
+    height:25px !important;
+    line-height: 25px;
+    display: inline;
+    margin-left:130px;
+    margin-top:10px;
+    
+    font-weight:bold;
+    color: #475078;
+    cursor: pointer
+}
+
+
+.form_clear {
+    clear:both;
+}
+
+.errore_form {
+    float:left;
+    color:#475078;
+    margin-left:10px; 
+}
+
+.tab1_non_disponibile {
+    width:270px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-spacing: 0;
+   
+}
+
+.tab1_riga_titolo {
+  color: #ffffff !important;
+  /*background:#3c82dc;*/
+  background: #626e7c;
+  height:27px;
+  font-weight:bold;
+}
+
+.tab1_riga1 {
+  color: #000000 !important;
+  background:#ffffff;  
+  
+}
+
+.tab1_riga2 {
+  color: #ffffff !important;
+  background:#ecf2fc;  
+}
+
+
+.tab1_campo1 {
+    text-align:center;
+    color: #deaaca;
+    width:70px;
+    font-size:10px;
+    font-weight:bold;
+    
+}
+
+.tab1_campo2 {
+    text-align:center;
+    color: #000000;
+    width:100px;
+
+}
+
+
+.informativa {
+    
+    font-family:Courier New;
+    font-size:11px;
+    margin:50px auto;
+    margin-bottom:30px;
+    
+}
+
+
+/*Form pagina Login*/
+
+.label_nick {
+    float: left;
+    
+    font: 14px/22px Arial,sans-serif;
+    margin-right: 10px;
+    margin-left:0px;
+    text-align: right;
+    font-weight: bold;
+    color: #475078;
+    height:25px;
+}
+
+.label_pass {
+    float: left;
+    
+    font: 14px/22px Arial,sans-serif;
+    margin-right: 10px;
+    margin-left:0px;
+    text-align: right;
+    font-weight: bold;
+    color: #475078;
+    height:25px;
+}
+/*bottone form login*/
+.botton_login{
+    float: left;
+    width: 70px;
+    text-align:center;
+    height:25px !important;
+    line-height: 25px;
+    display: inline;
+   
+    margin-top:10px;
+    
+    font-weight:bold;
+    color: #475078;
+    cursor: pointer
+}
+
+.errore_login{
+    float:left;
+    color:#475078;
+    margin-left:90px;
+    font-weight:bold;
+}
+
+.errore_login a {
+    
+    color:#475078;
+    
+    font-weight:bold;
+}
+
+/*Pagina Benvenuto, dopo aver fatto il login*/
+.saluto {    
+    float:right;
+    font-weight:bold;
+    color: #626e7c;
+       
+}
+
+.tab_oggi {
+    width:700px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-spacing: 0;
+   
+}
+
+.tab_oggi_titolo {
+  color: #ffffff !important;
+  /*background:#3c82dc;*/
+  background: #626e7c;
+  height:27px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.tab_oggi_riga1 {
+  color: #000000 !important;
+  background:#ffffff;
+  height:20px;
+  text-align:center;
+  
+}
+
+.tab_oggi_riga2 {
+  color: #000000 !important;
+  background:#ecf2fc;  
+  height:20px;
+  text-align:center;
+}
+
+.sfoglia_agenda {
+    margin:0 auto;
+    width:700px;
+    
+}
+
+.sfoglia_agenda_indietro {
+    float: left;
+    margin-left:250px;
+    height:35px;
+    width: 35px;
+    border:none;
+    outline: none;
+}
+.sfoglia_agenda_data {
+    margin:0px auto;
+    width:700px;
+    text-align:center;
+    
+    font-weight:bold;
+    
+}
+
+.sfoglia_agenda_avanti {
+    float: right;
+    margin-right:250px;
+    height:35px;
+    width: 35px;
+    border:none;
+    outline: none;
+}
+
+
+
+.passato{
+color: #96999c;
+background-color: #d3d5d8;
+text-align:center;
+}
+.passato2{
+color: #96999c;
+background-color: #dadee4;
+text-align:center;
+}
+
+.futuro{
+color: #000;
+background-color: #ecf2fc;
+text-align:center;
+}
+
+.futuro2{
+color: #000;
+background-color: #c1d0e8;
+text-align:center;
+}
+
+.presente{
+color: #fff;
+background-color: #626e7c;
+text-align:center;
+font-weight:bold;
+}
+
+
+.label_data_ricerca {
+    float: left;
+    width: 120px;
+    font: 14px/28px Arial,sans-serif;
+    margin-right: 10px;
+    
+    text-align: right;
+    font-weight: bold;
+    color: #475078;
+    height:25px;
+}
+
+
+.go_ricerca{
+    
+    width: 80px;
+    text-align:center;
+    height:25px !important;
+    line-height: 25px;
+    display: inline;
+    margin-left:10px;
+    
+    
+    font-weight:bold;
+    color: #475078;
+    cursor: pointer
+}
+
+
+/*Form Prenota*/
+.label_admin, .label_cliente, .label_telefono, .label_prezzo, .label_data_prenota, .label_ora_prenota {
+    float: left;  
+    font: 14px/26px Arial,sans-serif;
+    margin-right: 10px;
+    margin-left:0px;
+    text-align: right;
+    font-weight: bold;
+    color: #475078;
+    height:25px;
+    width: 120px;
+    margin-bottom:15px;
+}
+
+
+
+div.input_admin, .input_cliente {
+    display: block;
+    float: left;   
+    margin-bottom: 3px
+        
+}
+
+
+.go_prenota{
+    float: left;
+    width: 80px;
+    text-align:center;
+    height:25px !important;
+    line-height: 25px;
+    display: inline;
+    margin-left:130px;
+    margin-top:10px;
+    
+    font-weight:bold;
+    color: #475078;
+    cursor: pointer
+}
+
+
+.tab2_non_disponibile {
+    width:500px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-spacing: 0;
+   
+}
+
+
+.tab2_campo1 {
+    text-align:center;
+    color: #deaaca;
+    width:70px;
+    font-size:10px;
+    font-weight:bold;
+    
+}
+
+.tab2_campo2 {
+    text-align:center;
+    color: #000000;
+    width:100px;
+
+}
+
+.tab2_campo3 {
+    text-align:center;
+    color: #000000;
+    width:230px;
+
+}
+
+.botton_delete_procedi {
+    margin:0 auto;
+    text-align:center;
+    
+}
+
+
+/*Pagina Modifica Prenotazioni, solo per master Admin*/
+.tab_edit {
+    width:850px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-spacing: 0;
+   
+}
+
+
+.tab_modifica_prenotazioni {
+    width:800px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-spacing: 0;
+   
+}
+
+
+
+.edit_prenotazione {
+    text-align:center;
+    border:none;
+    outline: none;
+}
+
+
+/*pagination*/
+#pagination {
+    margin: 0 auto;
+   /* margin-left: 50px;*/
+}
+#pagination a, #pagination strong {
+    background: #e3e3e3;
+    padding: 4px 7px;
+    text-decoration: none;
+    border: 1px solid #cac9c9;
+    color: #292929;
+    font-size: 13px;
+    
+}
+
+#pagination strong, #pagination a:hover {
+    font-weight: normal;
+    background: #626e7c; /*cac9c9;*/
+}		

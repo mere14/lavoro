@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/usr/share/nginx/html/oslo/index.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/controllers/Altro.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/altro_message.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/config/autoload.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/welcome_message.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/config/database.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/home.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/controllers/home.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/models/home_model.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/config/routes.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/config/config.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/controllers/info.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/info.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/controllers/dove.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/controllers/verifica.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/controllers/visualizza_all_master.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/prenotazione_modificata_step1.php</file>
+            <file>file:/usr/share/nginx/html/oslo/style/style.css</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/base/header.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/base/header_private_master.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/prenota.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/verifica.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/registrazione.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/controllers/registrazione.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/models/registrazione_model.php</file>
+            <file>file:/usr/share/nginx/html/oslo/application/views/base_2/vista.php</file>
+        </group>
+    </open-files>
+</project-private>
