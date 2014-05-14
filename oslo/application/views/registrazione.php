@@ -3,7 +3,12 @@
     <?php $this->load->view ('base/head');?>
 <body>
     <div id="wrapper">
-        <?php $this->load->view ('base/header');?>
+        <?php 
+        if ($this->session->userdata('is_livello'))
+            $this->load->view ('base/header_private_master');
+        else
+        $this->load->view ('base/header_private');
+        ?>
         <div id="page">
             <div id="content">		
                 

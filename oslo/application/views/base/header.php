@@ -7,10 +7,10 @@
             <li class="current_page_item"><?php echo anchor('home', 'Home', 'title= "home" ')?> </li>
             <li><?php echo anchor('info', 'Info', 'title= "info"')?></li> 
             <li><?php echo anchor('dove', 'Dove Siamo', 'title= "dove siamo"')?></li> 
-            <li><?php echo anchor('#', 'Eventi', 'title= "eventi" ')?></li>
+            <li><?php echo anchor('esempio', 'Eventi', 'title= "eventi" ')?></li>
             <li><?php echo anchor('verifica', 'Prenota', 'title= "verifica"')?></li> 
             <li><?php echo anchor('login', 'Login', 'title= "login" ')?></li>
-            <li><?php echo anchor('registrazione', 'R', 'title= "registrazione" ')?></li>
+           
         </ul>
     </div>
 </div>

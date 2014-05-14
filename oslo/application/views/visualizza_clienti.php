@@ -3,7 +3,12 @@
     <?php $this->load->view ('base/head');?>
 <body>
     <div id="wrapper">
-        <?php $this->load->view ('base/header');?>
+        <?php 
+        if ($this->session->userdata('is_livello'))
+            $this->load->view ('base/header_private_master');
+        else
+        $this->load->view ('base/header_private');
+        ?>
         <div id="page">
             <div id="content">	
                 <p>
@@ -13,7 +18,7 @@
                 </p> 
                 
                 <?php 
-                    echo anchor('registrazione', 'nuovo cliente', 'title= "cliente" ');
+                    echo anchor('prenota', 'prenota campo', 'title= "prenota campo" ');
                 ?>
             </div> <!-- end #content -->
             <div style="clear: both;">&nbsp;</div>

@@ -13,16 +13,17 @@ class Prenota extends CI_Controller {
             if (!$this->is_logged_in()) {
                 redirect('login');
             }
-            if (!$this->is_logged_in()) {
-                redirect('login');
-            }
+           
         }
     
-	public function index()
+	public function index($cod_cli=NULL)
 	{
+            var_dump($cod_cli);
             $this->load->model('prenota_model');
+            $this->load->model('clienti');
             $data['admin'] = $this->prenota_model->get_admin();
             $data['operatori'] = $this->prenota_model->get_operatori();
+            $data['clienti'] = $this->clienti->get_all();
             $this->load->view('prenota', $data);
 	}
         
@@ -118,6 +119,11 @@ class Prenota extends CI_Controller {
             //$this->load->model('prenota_model');
             //$vet['prenotazioni']= $this->prenota_model->get_campo_occupato($a);
             $this->load->view('errore',$vet);
+        }
+        
+        public function nuovo_cliente ()
+        {   
+            $this->load->view('registrazione');
         }
       
 }

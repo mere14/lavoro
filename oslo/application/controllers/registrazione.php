@@ -8,7 +8,16 @@ class Registrazione extends CI_Controller {
         public function __construct()
         {
             parent::__construct();
-          
+
+            if (!$this->is_logged_in()) {
+                redirect('login');
+            }
+            
+        }
+        
+         private function is_logged_in()
+        {
+            return $this->session->userdata('is_logged_in');
         }
     
 	public function index()
@@ -47,7 +56,7 @@ class Registrazione extends CI_Controller {
                     $insert['cl_nome'] = $a;
                     $insert['cl_cognome'] = $b;
                     $insert['cl_telefono']  = $c;
-                    $insert['messaggio']  = "cliente registrato";
+                    $insert['messaggio']  = "registrazione cliente completata";
                 }
                 else{
                     $insert['cl_nome'] = "";
@@ -114,35 +123,7 @@ class Registrazione extends CI_Controller {
             }
         }
         
-        public function check_ora($ora_fine)
-        {   
-            $ora_inizio = $this->input->post('inizio');
-            if ($ora_fine <= $ora_inizio) {
-                $this->form_validation->set_message('check_ora', 'ATTENZIONE! ERRORE! Ora finale non puo essere minore di quella iniziale');
-                return FALSE;
-            }
-            else
-                return TRUE;   
-        }
         
-        public function check_telefono($tel)
-        {   
-           if (!is_numeric($tel))
-             {
-                $this->form_validation->set_message('check_telefono', 'ATTENZIONE! ERRORE! Inserire un numero telefonico corretto');
-                return FALSE;
-            }
-            else
-                return TRUE;   
-        }
-        
-        public function error($oggi)
-        {   
-            $vet['a']=$oggi;
-            //$this->load->model('prenota_model');
-            //$vet['prenotazioni']= $this->prenota_model->get_campo_occupato($a);
-            $this->load->view('errore',$vet);
-        }
       
 }
 

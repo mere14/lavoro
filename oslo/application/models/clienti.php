@@ -36,6 +36,16 @@ class Clienti extends CI_Model{
      
   }
   
+  function get_all() {
+       
+        $this->db->select ('*');
+        $this->db->from('clienti');
+        $this->db->order_by('cl_cognome');            
+        $query = $this->db->get();
+        return $query->result_array();     
+     
+  }
+  
   
   
 }

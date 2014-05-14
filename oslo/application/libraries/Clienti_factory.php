@@ -45,14 +45,17 @@ class Clienti_factory {
             
         }
         
-        public function aggiungi($data) {
-            //Create a new user_model object
-            $client = new clienti();
-            //Set the ID on the user model
-            $client->add($data);
-            
-            
-        }
+        
+        
+        
+//        public function aggiungi($data) {
+//            //Create a new user_model object
+//            $client = new clienti();
+//            //Set the ID on the user model
+//            $client->add($data);
+//            
+//            
+//        }
     
   
   

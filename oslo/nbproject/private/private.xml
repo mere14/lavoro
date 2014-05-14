@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/usr/share/nginx/html/lavoro/oslo/application/views/visualizza_clienti.php</file>
-            <file>file:/usr/share/nginx/html/lavoro/oslo/application/libraries/Clienti.php</file>
-            <file>file:/usr/share/nginx/html/lavoro/oslo/application/config/config.php</file>
-            <file>file:/usr/share/nginx/html/lavoro/oslo/application/views/registrazione.php</file>
+            <file>file:/usr/share/nginx/html/lavoro/oslo/application/views/prenota.php</file>
+            <file>file:/usr/share/nginx/html/lavoro/oslo/application/models/prenota_model.php</file>
+            <file>file:/usr/share/nginx/html/lavoro/oslo/application/controllers/prenota.php</file>
             <file>file:/usr/share/nginx/html/lavoro/oslo/application/controllers/registrazione.php</file>
         </group>
     </open-files>
