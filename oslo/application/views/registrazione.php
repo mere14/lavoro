@@ -3,7 +3,12 @@
     <?php $this->load->view ('base/head');?>
 <body>
     <div id="wrapper">
-        <?php $this->load->view ('base/header');?>
+        <?php 
+        if ($this->session->userdata('is_livello'))
+            $this->load->view ('base/header_private_master');
+        else
+        $this->load->view ('base/header_private');
+        ?>
         <div id="page">
             <div id="content">		
                 
@@ -14,13 +19,13 @@
                     
                        
                         <?php $at_nome=array('class'=>'label_data_prenota'); ?>
-                            <?=form_label('Inserisci nome', 'data', $at_nome);?>
-                            <?php $vet_nome=array('name' => 'data',
+                            <?=form_label('Inserisci nome', 'nome', $at_nome);?>
+                            <?php $vet_nome=array('name' => 'nome',
                                               'id' => 'nome', 
                                               'type'=>'text',
                                               'required'=>'required',
                                               'value'=>set_value('nome', ''),
-                                              'placeholder' => 'name', 
+                                              'placeholder' => 'name-giusto', 
                                                 );
                             ?>
                              <div class='input-verifica'>

@@ -31,8 +31,32 @@
                     <!--//FINE MENU A TENDINA -->
                     <?php echo form_hidden('admin', $id_administrator);?>
                        
+<<<<<<< HEAD
                     //commenti 
                     //altro 
+=======
+                        <?php $at_cliente=array('class'=>'label_cliente');?>
+                            <?=form_label('Inserisci Cliente ', 'clientes',$at_cliente);?>
+                            
+                        <?php 
+
+                        $dropdown_carica3 = array();
+                        foreach ($clienti as $cl) {
+                        $dropdown_carica3[$cl['cl_cognome']] = $cl['cl_cognome']. ' - ' .$cl['cl_nome']. ' - ' .$cl['cl_telefono']; 
+                        
+                        
+                        }
+                        
+                        ?>
+                        <div class='input_admin'>
+                         <?php  echo form_dropdown('cliente',$dropdown_carica3); ?>       
+                        </div>     
+                    
+                       
+                    <div class="errore_form"><?php echo form_error('cliente') ?> </div>
+                    <div class="form_clear"></div>
+                    
+>>>>>>> modifiche
                     
                         <?php $at_data=array('class'=>'label_data_prenota'); ?>
                             <?=form_label('Inserisci la data', 'data', $at_data);?>
@@ -81,32 +105,13 @@
                          </div>
                     <div class="errore_form"><b><?php echo form_error('fine') ?> </b></div>
                     <div class="form_clear"></div>
-                    
-                    
-                       <?php $at_cliente=array('class'=>'label_cliente');?>
-                            <?=form_label('Inserisci Cliente ', 'clientes',$at_cliente);?>
-                            <?php 
-                            //$valore=set_value('cliente');
-                            $vet_cliente=array('name' => 'cliente',
-                                              'id' => 'cliente', 
-                                              'required'=>'required',
-                                              'value'=>set_value('cliente', ''),
-                                            );
-                            ?>
-                        <div class='input_cliente'>
-                            <?=form_input($vet_cliente);?>
-                            </div>
-                    <div class="errore_form"><?php echo form_error('cliente') ?> </div>
-                    <div class="form_clear"></div>
-                        
-                    
                         
                         <?php $at_telefono=array('class'=>'label_telefono');?>
                             <?=form_label('Telefono', 'telefono',$at_telefono);?>
                             <?php $vet_telefono=array('name' => 'telefono',
                                               'id' => 'telefono',
                                               'type'=>'tel',
-                                              'value'=>set_value('telefono', ''),
+                                              'value'=>set_value('fine', ''),
                                             );
                             ?>
                             <?php// messaggio di errore sopra il campo echo form_error('telefono'); ?>
@@ -138,6 +143,8 @@
                         $dropdown_carica2 = array();
                         foreach ($operatori as $op) {
                         $dropdown_carica2[$op['op_id']] = $op['op_cognome']. ' ' .$op['op_nome'];
+                        
+                        
                         }
                         ?>
                         <div class='input_admin'>
@@ -155,6 +162,22 @@
                         <?=form_submit($go_prenota);?>
                         </div>
                     <?=form_close();?>
+                        
+                         <b>&nbsp;</b>
+                            <?php echo form_open('prenota/nuovo_cliente');?> 
+                            <?php $add_cliente=array(
+                                       'id'=>'add',
+                                       'name'=>'add',
+                                       'type'=>'submit',
+                                       'content'=>'ADD NUOVO CLIENTE',
+                                       'value'=>'ADD NUOVO CLIENTE',
+                                       'class'=>'add_bot_cliente');?>    
+                            <?=form_submit($add_cliente);?>
+                            <?php echo form_close();?> 
+                         
+<!--                         <br/><br/>-->
+<!--                         <input type="date" name="cuddu" id="cuddu" />-->
+                       
                 </div> <!-- end #content -->
             <div style="clear: both;">&nbsp;</div>
         </div> <!-- end #page -->

@@ -11,6 +11,7 @@
             <li><?php echo anchor('agenda', 'RICERCA', 'title= "agenda" ')?> </li>
             <li><?php echo anchor('visualizza_all_master', 'MODIFICA', 'title= "modifica" ')?> </li>
             <li><?php echo anchor('logout', 'OUT', 'title= "logout" ')?></li>
+<!--             <li><?php echo anchor('registrazione', 'R', 'title= "registrazione" ')?></li>-->
         </ul>
     </div>
 </div>
