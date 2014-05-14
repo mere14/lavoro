@@ -31,6 +31,9 @@
                     <!--//FINE MENU A TENDINA -->
                     <?php echo form_hidden('admin', $id_administrator);?>
                        
+                    //commenti 
+                    //altro 
+                    
                         <?php $at_data=array('class'=>'label_data_prenota'); ?>
                             <?=form_label('Inserisci la data', 'data', $at_data);?>
                             <?php $vet_data=array('name' => 'data',
